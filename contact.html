@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — E & K Printing</title>
+  <meta name="description" content="Request a quote from E & K Printing." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="E & K Printing Home">
+        <img class="brand__logo" src="assets/logo.png" alt="E & K Printing logo" />
+        <div class="brand__text">
+          <div class="brand__name">E &amp; K Printing</div>
+          <div class="brand__tag">Print • Signs • Apparel</div>
+        </div>
+      </a>
+
+      <button class="navbtn" data-navbtn aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="services.html">Services</a>
+        <a class="nav__link" href="work.html">Work</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link is-active" href="contact.html">Contact</a>
+        <a class="btn btn--primary nav__cta" href="#quote">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="pagehero">
+      <div class="container">
+        <h1>Contact</h1>
+        <p class="lead">Tell us what you need — we’ll reply with options and pricing.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container twoCol">
+        <div class="panel">
+          <h2>Quick info</h2>
+          <div class="info">
+            <div class="info__row">
+              <div class="info__label">Phone</div>
+              <div class="info__value"><a href="tel:+10000000000">(000) 000-0000</a></div>
+            </div>
+            <div class="info__row">
+              <div class="info__label">Email</div>
+              <div class="info__value"><a href="mailto:quotes@ekprinting.com">quotes@ekprinting.com</a></div>
+            </div>
+            <div class="info__row">
+              <div class="info__label">Hours</div>
+              <div class="info__value">Mon–Fri • 9–5</div>
+            </div>
+            <div class="info__row">
+              <div class="info__label">Location</div>
+              <div class="info__value">Add city/state here</div>
+            </div>
+          </div>
+
+          <div class="note">
+            Want the fastest quote? Include <b>size</b>, <b>quantity</b>, <b>deadline</b>, and a file/link if you have one.
+          </div>
+        </div>
+
+        <div class="panel" id="quote">
+          <h2>Request a quote</h2>
+
+          <!-- front-end demo only -->
+          <form class="form" id="quoteForm">
+            <div class="form__row">
+              <label>
+                Name
+                <input required name="name" type="text" placeholder="Your name" />
+              </label>
+              <label>
+                Phone / Email
+                <input required name="contact" type="text" placeholder="you@email.com" />
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label>
+                What do you need?
+                <select name="type">
+                  <option>Business Cards</option>
+                  <option>Flyers / Brochures</option>
+                  <option>Yard Signs</option>
+                  <option>Banners</option>
+                  <option>Apparel</option>
+                  <option>Stickers / Labels</option>
+                  <option>Design Help</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label>
+                Quantity
+                <input name="qty" type="text" placeholder="e.g., 250" />
+              </label>
+            </div>
+
+            <label>
+              Specs / Notes
+              <textarea name="notes" rows="5" placeholder="Size, finish, deadline, colors, etc."></textarea>
+            </label>
+
+            <label class="form__hint">
+              File link (Google Drive/Dropbox) — demo only
+              <input name="file" type="url" placeholder="https://..." />
+            </label>
+
+            <button class="btn btn--primary" type="submit">Send Request</button>
+            <p class="muted" id="formMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer--simple">
+    <div class="container footer__bottom">
+      <span>© <span data-year></span> E &amp; K Printing</span>
+      <a class="toplink" href="index.html">Back to home</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
