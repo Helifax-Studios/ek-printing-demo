@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Work — E & K Printing</title>
+  <meta name="description" content="Gallery of printing work: signs, menus, cards, banners, and apparel." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="E & K Printing Home">
+        <img class="brand__logo" src="assets/logo.png" alt="E & K Printing logo" />
+        <div class="brand__text">
+          <div class="brand__name">E &amp; K Printing</div>
+          <div class="brand__tag">Print • Signs • Apparel</div>
+        </div>
+      </a>
+
+      <button class="navbtn" data-navbtn aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="services.html">Services</a>
+        <a class="nav__link is-active" href="work.html">Work</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+        <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="pagehero">
+      <div class="container">
+        <h1>Recent Work</h1>
+        <p class="lead">These are placeholders — drop in real job photos later and the layout stays clean.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filterbar">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="signs">Signs</button>
+          <button class="chip" data-filter="paper">Paper</button>
+          <button class="chip" data-filter="banners">Banners</button>
+          <button class="chip" data-filter="apparel">Apparel</button>
+        </div>
+
+        <div class="grid grid--tight" data-grid>
+          <div class="work work--tile" data-type="signs">
+            <div class="work__thumb work__thumb--1"></div>
+            <div class="work__meta">
+              <div class="work__title">Yard Signs</div>
+              <div class="work__tags">Coroplast • Outdoor</div>
+            </div>
+          </div>
+
+          <div class="work work--tile" data-type="paper">
+            <div class="work__thumb work__thumb--2"></div>
+            <div class="work__meta">
+              <div class="work__title">Menus</div>
+              <div class="work__tags">Matte • High contrast</div>
+            </div>
+          </div>
+
+          <div class="work work--tile" data-type="banners">
+            <div class="work__thumb work__thumb--3"></div>
+            <div class="work__meta">
+              <div class="work__title">Event Banner</div>
+              <div class="work__tags">Vinyl • Grommets</div>
+            </div>
+          </div>
+
+          <div class="work work--tile" data-type="apparel">
+            <div class="work__thumb work__thumb--4"></div>
+            <div class="work__meta">
+              <div class="work__title">Crew Shirts</div>
+              <div class="work__tags">Clean branding</div>
+            </div>
+          </div>
+
+          <div class="work work--tile" data-type="paper">
+            <div class="work__thumb work__thumb--5"></div>
+            <div class="work__meta">
+              <div class="work__title">Business Cards</div>
+              <div class="work__tags">Soft-touch option</div>
+            </div>
+          </div>
+
+          <div class="work work--tile" data-type="signs">
+            <div class="work__thumb work__thumb--6"></div>
+            <div class="work__meta">
+              <div class="work__title">Window Decals</div>
+              <div class="work__tags">Vinyl • Install-ready</div>
+            </div>
+          </div>
+
+          <div class="work work--tile" data-type="banners">
+            <div class="work__thumb work__thumb--7"></div>
+            <div class="work__meta">
+              <div class="work__title">Grand Opening Banner</div>
+              <div class="work__tags">Outdoor • Durable</div>
+            </div>
+          </div>
+
+          <div class="work work--tile" data-type="apparel">
+            <div class="work__thumb work__thumb--8"></div>
+            <div class="work__meta">
+              <div class="work__title">Hats</div>
+              <div class="work__tags">Embroidery option</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="margin-top:18px;">
+        <div class="cta cta--compact">
+          <div>
+            <h3 style="margin:0 0 6px;">Want yours featured here?</h3>
+            <p class="muted" style="margin:0;">Send your specs — we’ll quote fast and make it look right.</p>
+          </div>
+          <a class="btn btn--primary" href="contact.html#quote">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer--simple">
+    <div class="container footer__bottom">
+      <span>© <span data-year></span> E &amp; K Printing</span>
+      <a class="toplink" href="index.html">Back to home</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
